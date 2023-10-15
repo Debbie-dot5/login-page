@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="form" >
+            <h4>Login to Account</h4>
+            <div class="form-box"id="form-box">
+                <input type="text" placeholder="Username" id="username">
+                <input type="password" placeholder="Password" id="password">
+                <button id="login-button">SIGN IN</button>
+
+            </div>
+            <div class="suggest">
+                <div class="default">
+                    <input type="checkbox">
+                    <span>Remember Me</span>
+                </div>
+                <div class="forgotpass">
+                   <a href="" class="link"><span>Forgot Password?</span></a> 
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <script>
+
+            
+
+            
+            document.getElementById('login-button').addEventListener('click', function () {
+                
+
+
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                if (username === '' || password === ''){
+                    alert('Please fill in all fields');
+                    
+                } else{
+                    alert('Welcome User!');
+                }
+
+            });
+
+
+        </script>
+    </body>
+</html>
